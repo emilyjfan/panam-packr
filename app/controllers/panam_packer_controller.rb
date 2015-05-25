@@ -5,6 +5,7 @@ class PanamPackerController < ApplicationController
 		rain       = ["Umbrella", "Rain Jacket"]
 		clear_day  = ["Sunscreen", "Hat", "Sunglasses"]
 		cool       = ["Jacket or Sweater"]
+		@forecast = ForecastIO.forecast(37.8267, -122.423)
 	end
 
 end
